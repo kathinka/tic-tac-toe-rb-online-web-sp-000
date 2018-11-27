@@ -87,3 +87,19 @@ def winner(board)
     nil
   end
 end
+
+#turn count
+def turn_count(board)
+count=0
+board.lenght
+end 
+
+#play
+def play(board)
+counter = 0
+ until counter == 9
+  turn(board)
+  counter += 1
+  end
+end 
+
