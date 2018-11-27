@@ -97,6 +97,13 @@ count = 0
     return count
 end
 
+##current player
+def current_player(board)
+count = turn_count(board)
+  count.odd? ? "O" : "X"
+end
+
+
 #play
 def play(board)
 counter = 0
