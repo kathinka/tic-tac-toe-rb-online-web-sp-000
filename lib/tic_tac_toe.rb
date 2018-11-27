@@ -24,7 +24,7 @@ input.to_i - 1
 end
 
 #move
-def move(board, index, current_player)
+def move(board, index, **current_player)
   board[index] = current_player
 end
 #position_taken
