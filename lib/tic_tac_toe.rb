@@ -92,7 +92,7 @@ end
 def turn_count(board)
 count=0
 board.lenght
-end 
+end
 
 #play
 def play(board)
@@ -102,4 +102,3 @@ counter = 0
   counter += 1
   end
 end 
-
