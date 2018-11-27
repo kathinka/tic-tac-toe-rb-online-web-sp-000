@@ -107,15 +107,14 @@ end
 #play
 def play(board)
 counter = 0
-if won?(board)
-  winner(board)
-  puts "Congratulations #{winner}!"
-elsif draw?(board)
-  puts "Cat's Game!"
-end
  until counter == 9
   turn(board)
   counter += 1
   end
-
+  if won?(board)
+    winner(board)
+    puts "Congratulations #{winner}!"
+  else draw?(board)
+    puts "Cat's Game!"
+  end
 end
