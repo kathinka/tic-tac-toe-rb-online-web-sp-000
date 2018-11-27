@@ -90,8 +90,11 @@ end
 
 #turn count
 def turn_count(board)
-count=0
-board.lenght
+count = 0
+  board.each do|value|
+    "#{value}" != " "  ? count += 1 : false
+  end
+    return count
 end
 
 #play
@@ -101,4 +104,4 @@ counter = 0
   turn(board)
   counter += 1
   end
-end 
+end
