@@ -107,14 +107,12 @@ end
 #play
 def play(board)
 counter = 0
+if won?(board)
+  winner(board)
+  puts "congrations "board[winning_combo.first]
+elsif draw?(board)
+  puts "Cat's Game!"
  until counter == 9
-   if won?(board)
-     winner(board)
-     puts "congrations "board[winning_combo.first]
-
-   elsif draw?(board)
-     puts "Cat's Game!"
-     
   turn(board)
   counter += 1
   end
