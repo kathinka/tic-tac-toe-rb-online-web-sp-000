@@ -84,4 +84,5 @@ def winner(board)
   #  puts board[winning_combo.first]
     board[winning_combo.first]
   end
+  nil
 end
