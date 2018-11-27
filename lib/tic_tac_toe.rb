@@ -111,10 +111,10 @@ counter = 0
    if won?(board)
      winner(board)
      puts "congrations "board[winning_combo.first]
-     break
+
    elsif draw?(board)
      puts "Cat's Game!"
-     break
+     
   turn(board)
   counter += 1
   end
