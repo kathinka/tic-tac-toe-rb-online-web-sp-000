@@ -82,7 +82,7 @@ end
 def winner(board)
   if winning_combo = won?(board)
   #  puts board[winning_combo.first]
-    board[winning_combo.first]
+    winner = board[winning_combo.first]
   else
     nil
   end
@@ -109,7 +109,7 @@ def play(board)
 counter = 0
 if won?(board)
   winner(board)
-  puts "Congratulations "+board[winning_combo.first]+"!"
+  puts "Congratulations #{player}!"
 elsif draw?(board)
   puts "Cat's Game!"
 end
